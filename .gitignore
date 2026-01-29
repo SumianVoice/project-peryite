@@ -1,0 +1,9 @@
+.vscode
+copy.sh
+*.blend*
+*.xcf
+*.kra
+*~
+.*
+_ignore*
+!.git*
