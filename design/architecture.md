@@ -2,7 +2,7 @@
 
 # Code Architecture
 ```
-amnv_game.matches = {
+suffix_game.matches = {
 	match {
 		player data (pi) {
 			[player] = {

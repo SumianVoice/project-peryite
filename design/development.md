@@ -44,4 +44,9 @@ Candidates: `Sumi`
 
 All sound assets for things that appear in the game (excluding music).
 
-------------
+
+# Licenses
+- Project license and configuration will be 0BSD, but all modules will have their own license which supersedes it.
+- APIs will be anything non-viral, 0BSD or MIT preferred.
+- Content will be under MPL 2.0 to discourage flips (soft copyleft / non viral, requires providing access and license to source code).
+- Media will be under CC-BY 4.0 or less restrictive.
