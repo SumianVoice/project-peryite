@@ -1,6 +1,7 @@
 > [Back to Index](<./index.md>)
 
 # Code Architecture
+```
 amnv_game.matches = {
 	match {
 		player data (pi) {
@@ -43,7 +44,7 @@ mapgen env {
 	biomes {
 	}
 }
-
+```
 
 For unsupported nodes:
 - use aStar to find a path to bedrock at this XZ pos

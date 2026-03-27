@@ -13,6 +13,7 @@ Numbers are hotbar positions.
 5. T3: repair everything in a large radius and stun all enemies
 	- Radius: 20m, Stun: 5s, CD: 5min
 6. build planner
+
 Specials:
 - dash: temp 2x speed boost for 10s, cooldown 20s
 - perk: can build 2x faster
@@ -29,6 +30,7 @@ Specials:
 5. T3: huge explosive dash through an enemy that one-shots almost everything
 	- CD: 3min
 6. build planner
+
 Specials:
 - dash: damages nearby enemies slightly, low cooldown, 2 charges total
 - perk: double shield HP
@@ -45,6 +47,7 @@ Specials:
 5. T3: fully heals all teammates, invulnerable for 4s
 	- CD: 5min
 6. build planner
+
 Specials:
 - dash: teleport (10m)
 - perk: teleports a teammate to them and heals them to full
@@ -53,18 +56,23 @@ Specials:
 # Roles
 ### Engineer
 Main Job: build stuff, help teammates and eco buildings from afar
+
 Secondary: keep buildings from being destroyed
 - good at building and occasional support
 - good movement skills (has move boost status effect)
 - can survive hordes but only if using turrets due to bad ammo efficiency
+
 ### Knight
 Main Job: kill tough targets and soak up damage
+
 Secondary: explore the map
 - really high DPS for single targets, can somewhat handle many enemies too
 - super hard to kill
 - good if solo
+
 ### Grenadier
 Main Job: obliterate hordes of enemies
+
 Secondary: save or revive teammates and keep the team alive
 - super high AoE, carpets the map in explosions
 - really strong skills for keeping teammates alive and reviving them
