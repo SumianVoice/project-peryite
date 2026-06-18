@@ -57,7 +57,7 @@ end)
 
 
 core.set_mapgen_setting("seed", 54352, true)
-amnv_game.start_match("lobby", "lobby")
+amnv_game.start_match("lobby", "mesas")
 amnv_game.start_match("survival", "mesas")
 
 -- error(dump(amnv_game.match_map))

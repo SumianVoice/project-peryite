@@ -106,7 +106,8 @@ mg_custom.register_generator("mesas", {
 			return
 		end
 
-		local FH = math.floor(self._box.minp.y + (self._box.maxp.y - self._box.minp.y) * 0.2)
+		-- Luantism 5.15.2: large flat areas need to be not on mapblock bounds or else they don't load half the time
+		local FH = math.floor(self._box.minp.y + (self._box.maxp.y - self._box.minp.y) * 0.2) + 1
 
 		if cdist > 50 and (pos.y <= FH) and flatten_factor > 0.8 then
 			data[di] = mg_custom.to_cid("amnv_nodes:dried_riverbed")

@@ -21,6 +21,19 @@ local function update_boxes()
 	core.log("updating boxes")
 	generator_boxes = core.ipc_get("amnv_game:mg_boxes") or {}
 	-- error(dump(generator_boxes))
+	core.log("update boxes")
+end
+
+function mg_custom.debug_particle(pos, color, time, vel, size)
+    do return end -- for debug purposes
+    core.add_particle({
+        size = size or 2,
+        pos = pos,
+        texture = "white.png^[colorize:"..(color or "#fff")..":255",
+        velocity = vel or vector.new(0, 0, 0),
+        expirationtime = time,
+        glow = 14,
+    })
 end
 
 --#todo: implement octree for performance
@@ -39,8 +52,9 @@ function mg_custom.get_generator_at(pos)
 			break
 		end
 	end
-	local generator = mg_custom.registered_generators[generator_name]
-	if generator and box then
+	local generator = mg_custom.registered_generator_meta[generator_name]
+	generator = setmetatable({}, generator)
+	if (generator ~= nil) and (box ~= nil) then
 		-- core.log(generator_name .. "  :  ".. tostring(pos))
 		generator._box_center = (
 			vector.floor(vector.add(box.minp, box.maxp) / 2)

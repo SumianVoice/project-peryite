@@ -80,6 +80,7 @@ function amnv_game.start_match(gamemode_name, biome_name)
 	match.index = index
 	amnv_game.update_match_boxes()
 	SIGNAL("on_match_started", match)
+	core.delete_area(match.minp, match.maxp)
 	return match
 end
 

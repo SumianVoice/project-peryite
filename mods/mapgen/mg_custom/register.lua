@@ -11,6 +11,7 @@ mg_custom.mg_name = core.get_mapgen_setting("mg_name")
 mg_custom.enabled = (mg_custom.mg_name ~= "flat")
 
 mg_custom.registered_generators = {}
+mg_custom.registered_generator_meta = {}
 mg_custom.generator = nil
 mg_custom.generator_name = nil
 mg_custom.seed = 12345
@@ -32,6 +33,7 @@ end
 
 function mg_custom.register_generator(name, def)
 	mg_custom.registered_generators[name] = def
+	mg_custom.registered_generator_meta[name] = {__index = def}
 end
 
 function mg_custom.set_generator(name, seed)

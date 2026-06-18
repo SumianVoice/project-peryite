@@ -63,3 +63,5 @@ core.register_globalstep(function(dtime) for i, player in ipairs(core.get_connec
         (new_vel - old_vel) * dtime * factor
     )
 end end)
+
+dofile(mod_path .. "/model.lua")
